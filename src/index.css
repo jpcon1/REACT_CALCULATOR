@@ -1,0 +1,48 @@
+:root{
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(5,100px);
+  gap: 10px;
+  margin-top: 100px;
+  background-color: black;
+}
+
+#root > div > button:nth-child(17){
+  grid-column: 1/3;
+}
+
+button{
+  border-radius: 100px;
+  background-color: rgb(48, 44, 44);
+  border:none ;
+  color: white;
+  font-size: 2em;
+}
+
+.grid-container > button:nth-child(1),
+.grid-container > button:nth-child(2),
+.grid-container > button:nth-child(3){
+  background-color: rgb(216, 198, 198);
+}
+
+#root > div > button:nth-child(4),
+#root > div > button:nth-child(8),
+#root > div > button:nth-child(12),
+#root > div > button:nth-child(16),
+#root > div > button:nth-child(19){
+  background-color: rgb(221, 172, 38);
+}
+
+.display-container{
+  background-color: black;
+  color: white;
+  margin-bottom: 0;
+}
